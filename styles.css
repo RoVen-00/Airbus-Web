@@ -1,0 +1,425 @@
+/*ESTILOS EN GENERAL*/
+body {
+	margin: 0px;
+	/*tuyo*/font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body::-webkit-scrollbar {
+	width: 5px;               /* ancho de la barra */
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: white;        /* color del rail */
+  }
+
+  body::-webkit-scrollbar-thumb {
+	background-color: #07193B;    /* color de la barra */
+  }
+
+figcaption { /*añadiendo la linea 8, 10 y 11 definimos el tamaño de las leyendas de las imanges con unidades relativas para ajustar el tamaño y 
+	adaptarlo al cambio del nowrap a wrap*/
+	color: #07193B;
+	text-align: center; /* HAS CAMBIADO ESTO DE JUSTIFY A CENTER*/ 
+	margin-left : 2vw; 
+	margin-right: 2vw;
+}
+h2 {
+	margin: 50px;
+	color: #07193B
+}
+h1 {
+	margin: 30px;
+	color: #07193B
+}
+h3{
+	margin: 30px;
+	color: #07193B
+}
+figcaption h3 { /*Estilos los titulos de las imagenes de media-center*/
+	margin: 30px;
+	color: #07193B;
+	text-align: center;
+}
+/*ESTILOS EN GENERAL*/
+
+/*MENU DE CABECERA*/
+.header {
+	background-color: #07193B;
+	position: -webkit-sticky; /*hace lo mismo que position: sticky pero esta es la linea necesaria para que funcione en safari*/
+  	position: sticky;
+	top: 0px; /*position: sticky necesita de esta linea para poder funcionar en funcion del numero que le pongas le da mas o menos margen.Como es necesaria pero no quiero margen le pongo 0.*/
+	color: White;
+	padding: 10px 20px;
+	position: sticky;
+}
+
+.header a {
+	text-decoration: none;
+}
+#logo {
+	width:42px;
+	height:42px;
+}
+
+#header ul {
+	list-style: none;
+	padding: 0px;
+	overflow: hidden;
+}
+
+#header li {
+	float: left;
+	margin:0 15px 0 0;
+}
+#content {
+	padding: 20px;
+}
+
+#header ul a {
+	color: #FFFFFF;
+}
+
+#header ul a:hover {
+	color: #0d6efd;
+}
+/*MENU DE CABECERA*/
+/*ESTILO DEL BANNER*/
+
+  body {
+	font-family: Arial;
+	font-size: 17px;
+	margin: 0;
+  }
+  
+  #myVideo {
+	/* Ocupa todo el ancho de la pantalla */
+	width: 100%; /*MODIFICA EL ANCHO DEL VIDEO BANNER*/
+	height: 400px; /*MODIFICA LA ALTURA DEL VIDEO BANNER*/
+	object-fit: cover; /*para que el elemento cubra totalmente (cover) el elemento que lo contiene*/
+  }
+  
+  .content {
+	color: #f1f1f1;
+	width: 100%;
+	padding: 0px;/*PROBLEMA DE DESPLAZAMIENTO A LA DERECHEA EN PORTATIL SOLUCIONADO EN index (.content) CAMBIANDO ESTE VALOR
+	DE 20px a 0px !!!!!PROBAR A QUITAR TOTALMENTE UNA VEZ NO HAYA PROBLEMAS CON EL CAMBIO EN EL SOBREMESA !!!!!*/
+	padding-top: 1em;
+	display: flex; /*con esta linea y la 92 conseguimos que el boton este centrado y sus margenes, padding, etc... no 
+	desplacen la pagina a la derecha del body (le quita el escroll horizontal)*/
+	justify-content: center;	
+  }
+  
+  #myBtn {
+	width: 200px;
+	font-size: 18px;
+	padding: 10px;
+	border: none;
+	background: #07193B;
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  #myBtn:hover {
+	background: #ddd;
+	color: black;
+  }
+
+/*ESTILO DEL BANNER*/
+/*ESTO ES PARA DARLE FORMATO AL HTML SOBRE MI*/
+.two-colums img, .two-colums p {
+	float: left;
+	width: 40%;
+}
+
+.two-colums p {
+	margin: 0 20px
+}
+/*ESTO ES PARA DARLE FORMATO AL HTML SOBRE MI*/
+
+
+/*FORMULARIO DE LA WEB DE FORMULARIO*/
+#content form [type=text], #content form [type=email] , #content form textarea {
+	Display: block;
+	margin-bottom: 10px;
+	width: 50%;
+	padding: 10px;
+	border: 0;
+	background-color: #EFEFEF;
+	color: #07193B;
+}
+/*FORMULARIO DE LA WEB DE FORMULARIO*/
+
+/*ESTO ES PARA UNA TABLA DE HORARIOS QUE VENIA EN EL INDEX DEL CURSO DE NATE*/
+table {
+	border: 1px solid #ccc;
+}
+
+#content table tr {
+	background-color: #ccc;
+}
+
+#content table tr:nth-child(even) {
+	background-color: #efefef;
+
+}
+
+#content table tr>* {
+	padding: 3px 10px;
+	border-bottom: 1px solid #666;
+}
+/*ESTO ES PARA UNA TABLA DE HORARIOS QUE VENIA EN EL INDEX DEL CURSO DE NATE*/
+
+/* ENLACES DENTRO DEL FOOTER*/
+
+hr {
+	margin: 50px;
+}
+.links_connected a { /*AQUI CAMBIAS INTELLIGENCE, AIRBUS PROTECT Y AIRBUS ADVENTURES*/
+	color: white;
+	text-decoration: none;
+}
+.links_connected a:hover { /*EFECTO ENLACES DENTRO DE CONNECTED*/
+	/*color: #07193B;*/
+	color: grey;
+}
+.links_connected a:active { /*EFECTO ENLACES DENTRO DE CONNECTED*/
+	color: greenyellow;
+}
+/* ENLACES DENTRO DELFOOTER*/
+
+/*ESTILO SECCION DE HIGHTLIGHTS*/
+figure {
+	text-align: center;
+}
+.container img {
+	max-width: 25vw; /* cambiando los em cambias el tamaño de las imagenes */
+	height: auto;
+}
+
+.one-third-figure {
+	width: 29vw;
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+.one-third-figure-aircrafts {
+	width: 29vw;
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;  /*PROBLEMA DE DESPLAZAMIENTO A LA DERECHEA EN PORTATIL SOLUCIONADO EN HIGHTLIGTS CAMBIANDO ESTE VALOR
+	DE NOWRAP A WRAP !!!!!PROBAR A QUITAR TOTALMENTE UNA VEZ NO HAYA PROBLEMAS CON EL CAMBIO EN EL SOBREMESA !!!!! VALORAR
+	METER UNA CUARTA IMAGEN PARA QUE EN EL PORTATIL CUANDO HAGA EL WRAP QUEDE MUCHO MAS ESTETICO*/
+}
+.container-aircrafts {
+	display: flex;
+	flex-wrap: wrap;
+}
+/*ESTILO SECCION DE HIGHTLIGHTS*/
+/*ESTILO DE MEDIA-CENTER*/
+#action-media-center {
+	width: 50%;
+	height: 400px;
+	margin-left: 0px; 
+	background-color: #EFEFEF;
+	float: left;
+}
+#action-media-center img { /*PARA CAMBIAR EL TAMAÑO DE LA IMAGEN DEL FINAL DEL
+	MEDIA CENTER*/
+	height: 370px;
+}
+#parrafo-media-center {
+	width: 50%;
+	height: 400px;
+	margin-left: 0px; 
+	background-color: #EFEFEF;
+	float: left;
+	text-align: justify;
+}
+#parrafo-media-center h1 h3 {
+	padding: 100%;
+	
+}
+.one-third-figure-media { /*igual que pasaba en el index que se te descolocaban las imagenes por su tamaño,
+	si a las figures le das un tamaño y margenes en unidades relativas, se colocan mejor y dejan de hacer cosas raras*/
+	width: 29vw;
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+.container-media-center {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.container-media-center a {
+	text-decoration: none;
+}
+#discover-more { /*BOTON DISCOVER MORE*/
+	padding: 5px;
+	background-color: #EFEFEF;
+	color: #07193B;
+  	border-radius: 10px;
+	font-weight: bold;
+	margin-left: 40%;
+	text-decoration: none;
+	animation: none; 
+}
+@keyframes Relieve {
+	0%   { background: #EFEFEF; }
+	50%  {
+		background: #4cb3ff;
+		transform: scale(1.02, 1.02);
+		box-shadow: 5px 5px 10px gray;}
+	100% { background: #EFEFEF; }
+}
+
+#discover-more:hover {
+	animation: Relieve 1.5s infinite; /* Al pasar el raton encima se activa la animacion.
+	Antes animation: Relieve 1.5s; no estaba en hover por lo que estaba siempre activado */
+}
+/*ESTILO DE MEDIA-CENTER*/
+/*ESTILO SECCION DE OUR PURPOSE IN ACTION*/
+.action {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-left: 0%; /*PROBLEMA DE DESPLAZAMIENTO A LA DERECHEA EN PORTATIL SOLUCIONADO SOLO EN EL DIV ACTION CAMBIANDO ESTE VALOR
+	DE 340PX A 0% !!!!!PROBAR A QUITAR TOTALMENTE UNA VEZ NO HAYA PROBLEMAS CON EL CAMBIO EN EL SOBREMESA*/
+}
+.parrafo {
+	width: 570px;
+	text-align: justify;
+}
+#ascendint-to-new {
+	text-align: center;
+}
+/*ESTILO SECCION DE OUR PURPOSE IN ACTION*/
+/*ESTILO SECCION DE FEATURED NEWS*/
+.new {
+	display: flex;
+	flex-wrap: wrap; /*PROBLEMA DE DESPLAZAMIENTO A LA DERECHEA EN PORTATIL SOLUCIONADO EN HIGHTLIGTS CAMBIANDO ESTE VALOR
+	DE NOWRAP A WRAP !!!!!PROBAR A QUITAR TOTALMENTE UNA VEZ NO HAYA PROBLEMAS CON EL CAMBIO EN EL SOBREMESA !!!!! VALORAR
+	METER UNA CUARTA IMAGEN PARA QUE EN EL PORTATIL CUANDO HAGA EL WRAP QUEDE MUCHO MAS ESTETICO*/
+}
+/*ESTILO SECCION DE FEATURED NEWS*/
+
+.footer-title {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+}
+.one-third-figure-new { /*añadiendo la linea 8, 10 y 11 definimos el tamaño de las leyendas de las imanges con unidades relativas para ajustar el tamaño y 
+	adaptarlo al cambio del nowrap a wrap*/
+	width: 29vw;
+	margin-left : 1vw; 
+	margin-right: 2,5vw; /*cambiado de 2 a 2,5*/
+	
+}
+.parrafo2 {
+	/*width: 550px;*/
+	text-align: justify;
+
+}
+.columna { /*AQUI CAMBIAS EL TAMAÑO DEL FOOTER*/
+	height: 250px;
+	width: 25%;	   
+}
+.contenidocolumna1 {
+	text-align: center;
+	color: white;
+}
+
+#col1 {
+	background-color: #07193B;
+	float: left;
+}
+#col2 {
+	background-color: #07193B;
+	float: left;
+}
+#col3 {
+	background-color: #07193B;
+	float: left;
+}
+#col4 {
+	background-color: #07193B;
+	float: left;
+}
+.links_connected:hover {
+	color: grey;
+
+}
+.links_connected:active {
+	color: greenyellow;
+
+}
+
+/*COLUMNA FOOTER LETS STAY IN TOUCH*/
+#contact { /*BOTON CONTACT US*/
+	padding: 5px;
+	background-color: #FFFFFF;
+	color: #07193B;
+  	border-radius: 10px;
+	font-weight: bold;
+	margin-left: 40%;
+	text-decoration: none;
+	animation: none; 
+}
+@keyframes Relieve {
+	0%   { background: white; }
+	50%  {
+		background: #4cb3ff;
+		transform: scale(1.02, 1.02);
+		box-shadow: 5px 5px 10px gray;}
+	100% { background: white; }
+}
+
+#contact:hover {
+	animation: Relieve 1.5s infinite; /* Al pasar el raton encima se activa la animacion.
+	Antes animation: Relieve 1.5s; no estaba en hover por lo que estaba siempre activado */
+}
+.links_sm { /*ENLACES A REDES SOCIALES*/
+	margin-left: 22%;
+}
+.links_sm img {
+	width:30px;
+	height:30px;
+	padding: 5px;	
+}
+/*COLUMNA FOOTER LETS STAY IN TOUCH*/
+
+/*ESTILO INFOGRAFIAS EN CADA PAGINA DENTRO DE AIRCRAFTS*/
+.info {
+	width: 35vw;
+	margin-left: 30vw;
+	margin-right: 20vw;
+	margin-top: 5vw;
+}
+/*ESTILO INFOGRAFIAS EN CADA PAGINA DENTRO DE AIRCRAFTS*/
+
+/*ESTILO TABLAS EN CADA PAGINA DENTRO DE AIRCRAFTS*/
+
+.table {
+	
+	margin-left: 38vw;
+	margin-right: 20vw;
+	margin-top: 5vw;
+	
+}
+table {
+	border: 1px solid #ccc;
+}
+.table table tr {
+	background-color: #307CC3;
+}
+
+.table table tr:nth-child(even) {
+	background-color: #8ECC2E;
+
+}
+
+.table table tr>* {
+	padding: 3px 10px;
+	border-bottom: 1px solid #666;
+}
+
+/*ESTILO TABLAS EN CADA PAGINA DENTRO DE AIRCRAFTS*/

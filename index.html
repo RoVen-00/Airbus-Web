@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="styles.css" rel="stylesheet">
+		<link rel="icon" href="media/logo.jpeg">
+	</head>
+	<body>
+		<div class="header" id="header"> 
+			<ul>
+				<li><a href="index.html"><img id="logo" src="media/logo.jpeg"></li>
+				<li><a href="Aircrafts.html">Aircrafts</a></li>
+				<li><a href="Media-center.html">Media center</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>			
+		<video autoplay muted loop id="myVideo"> <!--Esto es el video que se va a reproducir automaticamente, sin sonido y en bucle-->
+			<source src="./media/video1.mp4" type="video/mp4">  
+			
+		  </video>
+		  
+		  <div class="content"> <!--Esto es el boton-->
+			<button id="myBtn" onclick="myFunction()">Pause</button> <!--Al hacer click va a pasar lo que esta programado en la funcion hecha entre <script></script>-->
+		  </div>
+		  
+		  <script>
+		  var video = document.getElementById("myVideo"); //variable para el video//
+		  var btn = document.getElementById("myBtn"); //variable para el boton//
+		  
+		  function myFunction() { //la funcion llamada mi funcion//
+			if (video.paused) { //si el video esta pausado 
+			  video.play(); //al hacer click reproducelo//
+			  btn.innerHTML = "Pause"; //cambia el texto a pause//
+			} else { //cualquier otra cosa//
+			  video.pause(); //pausa el video//
+			  btn.innerHTML = "Play"; //cambia el texto a play//
+			}
+		  }
+		  
+		  </script>
+		<h2>Hightlights</h2>
+		<hr>
+		<div class="container">
+			<figure class="one-third-figure">
+			  <img src="media/imagen1.jpg" alt="Imagen 1">
+			  <figcaption>Artemis ll crew visits Orion ESM at Airbus Bremen.</figcaption>
+			</figure>
+			<figure class="one-third-figure">
+			  <img src="media/imagen2.jpg" alt="Imagen 2">
+			  <figcaption>Dubai Airshow 2023 Day 1 - A380 UAE Emirates and AI Forsan flying display.</figcaption>
+			</figure>
+			<figure class="one-third-figure">
+			  <img src="media/imagen3.jpg" alt="Imagen 3">
+			  <figcaption>Side by side - MetOp 2nd Gen ssatellites.</figcaption>
+			</figure>
+		</div>
+		<h2>Our purpose in action</h2>
+		<hr>
+		<div class="action">
+			<figure>
+				<img src="media/imagen4.jpg" alt="Imagen 4">
+				<figcaption id="ascending-to-new">ASCENDing to new heights with cryogenic superconductivity.</figcaption>
+			</figure>
+			  	<div class="parrafo">
+				<p>
+					In November 2023, <abbr>ASCEND</abbr> took its final step. The team successfully prowered-on 
+					the 500 kilowatt poweetrain at the System's core. It's an exiting breakthrough.
+
+					In the quest for cleaner transportation, the marriage of hydrogen-powered fuel
+					cells and hight temeperature, or cryogenic, superconductivity could be a game
+					changer.
+
+					The curren density of superconductin tape is one hundred time that fo a copper
+					equivalent. Cryogenically freezing that tape enables it to carry electriccal power 
+					from a fuel source to a propulsion sustem wehith practically no resistance.
+
+					That's why, nestled inside a large warehouse just outside of Toulouse, France,
+					Airbus UpNext's <strong>A</strong>dvanced <strong>S</strong>uperconducting and <strong>C</strong>ryogenic <strong>E</strong>xperimental
+					Powertrai<strong>N</strong> <strong>D</strong>emostrator (<abbr>ASCEND</abbr>) team has spent the last three years exploring
+					the impact of cyogenic superconductivity on the electrical infraestructura that
+					could power the next generation of low-carbon aircraft.
+				</p>
+				</div>
+		</div> 
+		<h2>Featured News</h2>
+		<hr>
+		<div class="new">
+			<figure class="one-third-figure-new">
+			  <img src="media/imagen5.jpg" alt="Imagen 5">
+			  <figcaption class="parrafo2">
+				<q>We are proud that the Bundeswehr has decided to order up to 82 H145M helicopters</q>, said Bruno Even, CEO of Airbus Helicopters. 
+				<q>The H145M is a robust multi-role helicopter and the German Air Force has gained a significant amount of operational experience with its H145M LUH Special Operations Forces fleet. 
+				We will ensure that the Bundeswehr receives the helicopters in accordance with the very ambitious delivery schedule which includes first deliveries in 2024 less than a year after contract signature.
+				</q>
+			</figcaption>
+			</figure>
+			<figure class="one-third-figure-new">
+			  <img src="media/imagen6.jpg" alt="Imagen 6">
+			  <figcaption class="parrafo2">
+				It is 1:20 pm on a Tuesday at  Ämari Air Base in western Estonia, just 250 km from the Russian border. 
+				In less than 10 minutes, two Eurofighter pilots, one Spanish and one German, will be involved in a <u>Tango Scramble</u>, a training exercise designed to simulate a real-life interception mission.
+				At that precise moment, an alarm echoes through the base. It is an <u>Alpha Scramble</u>. A real alert. The real deal! From that moment, training and theory turns into real life operations. 
+				</figcaption>
+			</figure>
+			<figure class="one-third-figure-new">
+			  <img src="media/imagen7.jpg" alt="Imagen 7">
+			  <figcaption class="parrafo2">
+				Multiple posts showing queues of people outside one of Ukraine's main banks, which had allegedly banned withdrawals, combined with the hacking of the same bank's website. <i>Fake news</i>.
+				A video of Ukrainian President Vladimir Zelensky circulated on social media in March 2022, giving the impression that he was telling Ukrainian citizens to "lay down their arms". An AI-generated, deepfake video.
+			  </figcaption>
+			</figure>
+		  </div>
+		</div> 
+		<br><br><br>
+		
+		<div id="footer">
+			<div class="columna" id="col1">
+				<h3 id="touch" class="footer-title">Let's stay in touch</h3>
+				<p><a id="contact" href="contact.html">Contact us</a></p>
+				<div class="links_sm"> 
+					<a href="https://www.linkedin.com/company/airbusgroup" title="linkedin"><img id="Linkedin" src="media/LogoLinkedin.png"></a>
+					<a href="https://twitter.com/airbus" title="Twitter"><img id="twitter" src="media/logox.png"></a>
+					<a href="https://www.facebook.com/airbus" title="Facebook"><img id="facebook" src="media/logofacebook.png"></a>
+					<a href="https://www.instagram.com/airbus" title="Instagram"><img id="instagram" src="media/logoinstragram.png"></a>
+					<a href="https://www.youtube.com/user/airbus" title="Youtube"><img id="youtube" src="media/logoyoutube.png"></a>
+					<a href="https://www.tiktok.com/@airbus" title="TikTok"><img id="tiktok" src="media/logotiktok.png"></a>
+				</div>
+			</div>
+			<div class="columna" id="col2">
+				<h3 id="connected" class="footer-title">Connected websites</h3>
+				<div class="links_connected">
+					<div class="contenidocolumna1" id="columna1"><p><a href="https://intelligence.airbus.com/">Intelligence</a></p></div>
+					<div class="contenidocolumna1" id="columna2"><p><a href="https://www.protect.airbus.com/">Airbus protect</a></p></div>
+					<div class="contenidocolumna1" id="columna3"><p><a href="https://www.airbusventures.vc/">Airbus ventures</a></p></div>
+				</div>
+			</div>
+			<div class="columna" id="col3">
+				<h3 id="customer" class="footer-title">Customer portals</h3>
+				<div class="links_connected">
+					<div class="contenidocolumna1" id="columna1"><p><a href="https://w3.airbus.com/">Airbus world for Aircrafts</a></p></div>
+					<div class="contenidocolumna1" id="columna2"><p><a href="https://www.protect.airbus.com/">Airbus world for Helicopters</a></p></div>
+				</div>
+			</div>
+			<div class="columna" id="col4">
+				<h3 id="useful" class="footer-title">Useful links</h3>
+				<div class="links_connected">
+					<div class="contenidocolumna1" id="columna1"><p><a href="https://brand.airbus.com/en">Brand center</a></p></div>
+					<div class="contenidocolumna1" id="columna2"><p><a href="https://discoveryspace-foundation.airbus.com/en">Airbus foundation Discovery Space</a></p></div>
+				</div>
+			</div>
+		</div> 	
+	</body>
+</html>
