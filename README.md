@@ -20,4 +20,4 @@ Later on, the project was **voluntarily extended** to include a **dynamic form**
 ## Author
 
 **Rodrigo Ventura Vega**  
-_First-year ASIR student — 2024_
+_First-year NCSA student — 2024_
